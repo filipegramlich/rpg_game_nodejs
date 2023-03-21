@@ -4,7 +4,7 @@ import { Werewolf } from "../../../entities/EnemyCharacters/Werewolf";
 const archerProps = { 
   commonArrow: 20 , 
   fireArrow: 30 , 
-  arrowDefender: 20
+  bow: 20
 };
 
 export const archer = new Archer(archerProps, 100, 100, "Legolas");
