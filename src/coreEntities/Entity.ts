@@ -1,8 +1,8 @@
 export abstract class Entity<P> {
 
-    public health: number;
-    public mana: number;
-    public name: string;
+    protected health: number;
+    protected mana: number;
+    protected name: string;
     public props: P;
 
     constructor(props: P, health: number, mana: number, name: string){

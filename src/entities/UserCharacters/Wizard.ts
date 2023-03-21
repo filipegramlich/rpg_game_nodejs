@@ -1,6 +1,6 @@
 import { Entity } from "../../coreEntities/Entity";
 
-type MageProps = {
+type WizardProps = {
 
     fireBall: number;
     lightRay: number;
@@ -8,9 +8,9 @@ type MageProps = {
 
 }
 
-export class Mage extends Entity<MageProps> {
+export class Wizard extends Entity<WizardProps> {
 
-    constructor(props: MageProps, health: number, mana: number, name: string) {
+    constructor(props: WizardProps, health: number, mana: number, name: string) {
         super(props, mana, health, name);
     }
 

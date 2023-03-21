@@ -1,14 +1,14 @@
 import { Entity } from "../../coreEntities/Entity";
 
-type SoldierProps = {
+type WarriorProps = {
     sword:number;
     knife:number;
     shield:number;
 }
 
-export class Soldier extends Entity<SoldierProps> {
+export class Warrior extends Entity<WarriorProps> {
     
-    constructor(props: SoldierProps, health: number, mana: number, name:string){
+    constructor(props: WarriorProps, health: number, mana: number, name:string){
         super(props, mana, health, name);
     }
 

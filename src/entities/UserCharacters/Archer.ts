@@ -12,15 +12,22 @@ export class Archer extends Entity<ArcherProps> {
     super(props, mana, health, name);
   }
 
-  ironArrowAttack() {
+  ironArrowAttack(enemy: any) {
+    const { commonArrow } = this.props;
+    let remainingLife = enemy.health - commonArrow;
+    return remainingLife;
+  }
+
+  fireArrowAttack(enemy: any) {
+
+    const { fireArrow } = this.props;
+    let remainingLife = enemy.health - fireArrow;
+    enemy.health
+    return remainingLife;
 
   }
 
-  fireArrowAttack() {
-
-  }
-
-  bowDefense() {
+  bowDefense(characterUser:any,enemy: any) {
 
   }
 }
