@@ -1,19 +1,15 @@
 export abstract class Entity<P> {
 
-    protected specie: string;
-    protected health: number;
-    protected mana: number;
-    protected xp:number;
-    protected name:string;
+    public health: number;
+    public mana: number;
+    public name: string;
     public props: P;
-    
-    constructor( props: P, specie: string, health: number, mana: number, xp: number, name:string,){
-        this.health = health;
-        this.specie = specie;
-        this.mana = mana;
-        this.xp = xp;
-        this.props = props;
+
+    constructor(props: P, health: number, mana: number, name: string){
         this.name = name;
+        this.health = health;
+        this.mana = mana;
+        this.props = props;
     }
 
 }
